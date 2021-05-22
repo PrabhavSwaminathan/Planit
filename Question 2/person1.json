@@ -1,0 +1,30 @@
+[
+  {
+    "id": "1",
+    "name": "Prabhav",
+    "DOB": "1996-01-16",
+    "Nationality": "Indian",
+    "country": "India"
+  },
+  {
+    "id": "2",
+    "name": "Sam",
+    "DOB": "2006-04-06",
+    "Nationality": "American",
+    "country": "America"
+  },
+  {
+    "id": "3",
+    "name": "Tina",
+    "DOB": "1996-06-24",
+    "Nationality": "Malaysian",
+    "country": "Malaysia"
+  },
+  {
+    "id": "4",
+    "name": "Justin",
+    "DOB": "1989-11-24",
+    "Nationality": "Australia",
+    "country": "Australian"
+  }
+]
