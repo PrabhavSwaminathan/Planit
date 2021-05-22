@@ -1,0 +1,207 @@
+Test Cases
+--------------------------------------------------------------------------------------------------------------------
+Test Case 1 
+
+Title: Login Page – Authenticate Successfully on Jupiter Toys
+
+Description: A registered user should be able to successfully login at https://jupiter.cloud.planittesting.com/#/.
+
+Precondition: the user must already be registered with an email address and password.
+
+Assumption: a supported browser is being used.
+
+Test Steps:
+
+Navigate to https://jupiter.cloud.planittesting.com and click on the login tab
+In the 'Username' field, enter the email address of the registered user.
+Enter the password of the registered user in the 'Password'
+Click 'login'
+Expected Result: User should be directed to the home page of the website.
+
+--------------------------------------------------------------------------------------------------------------------
+
+Test Case 2 
+
+Title: Adding Product to Cart
+
+Description: When user clicks on the 'buy' product must be added to cart
+
+Precondition: None
+
+Assumption: a supported browser is being used.
+
+Test Steps:
+
+Navigate to https://jupiter.cloud.planittesting.com/#/shop
+Click 'buy' on any product
+Expected Result: The product should be added to cart and total quantity in the cart tab must be incremented by 1
+
+--------------------------------------------------------------------------------------------------------------------
+
+Test Case 3 
+
+Title: Clicking on the Checkout Button
+
+Description: When user clicks on the 'checkout' button, user must be directed to the page where he can enter his/her
+			 delivery and payment details
+
+Precondition: There must be some or atleast one product in the cart
+
+Assumption: a supported browser is being used.
+
+Test Steps:
+
+Navigate to https://jupiter.cloud.planittesting.com/#/cart
+Click 'chekout'
+Expected Result: The user must be redirected to a page where he/she can enter additional details to complete the order
+
+--------------------------------------------------------------------------------------------------------------------
+
+Test Case 4 
+
+Title: Removing all products from cart
+
+Description: When user clicks on the 'empty cart' button, all the items must be removed from the cart.
+
+Precondition: There must be some or atleast one product in the cart.
+
+Assumption: a supported browser is being used.
+
+Test Steps:
+
+Navigate to https://jupiter.cloud.planittesting.com/#/cart
+Click 'empty Cart' button
+Expected Result: All the products in the cart must be removed and the cart should become empty.
+
+--------------------------------------------------------------------------------------------------------------------
+
+Test Case 5 
+
+Title: Adding one product to the cart multiple times
+
+Description: When user clicks on the 'buy' button on a single product multiple times, the number of times the user
+			 clicked on the product must be the quantity of the product in the cart.
+
+Precondition: None
+
+Assumption: a supported browser is being used.
+
+Test Steps:
+
+Navigate to https://jupiter.cloud.planittesting.com/#/shop
+Click on the 'buy' button for one product multiple times
+Expected Result: When the user checks the cart, the product quantity must be equal to the number of times the user
+				 clicked on the buy button.
+
+--------------------------------------------------------------------------------------------------------------------
+
+Test Case 6 
+
+Title: Removing one product from the cart 
+
+Description: When user clicks on the 'red' button right next to the product in the cart, that item must be removed
+			 from the cart.
+
+Precondition: There must be some or atleast one product in the cart.
+
+Assumption: a supported browser is being used.
+
+Test Steps:
+
+Navigate to https://jupiter.cloud.planittesting.com/#/cart
+Click 'red' button for any product in the cart
+Expected Result: The products that user chooses to remove from the cart must be removed.
+
+--------------------------------------------------------------------------------------------------------------------
+
+Test Case 7 
+
+Title: Submitting Feedback to the website
+Description: When user clicks on the 'Contact' tab on the navigation pane, the user must be directed to that page,
+			 where he can enter his details and leave a feedback.
+
+Precondition: None.
+
+Assumption: a supported browser is being used.
+
+Test Steps:
+
+Navigate to https://jupiter.cloud.planittesting.com/#/contact
+Click on the contact tab on the navigation pane of the website
+Enter Details like name, email, phone number and the message and press submit.
+
+Expected Results: 
+If any one of the input boxes that are marked with a * are left empty, the website will display an error message
+saying that mandatory field needs to be filled.
+
+If the email entered is not in the proper email format, the website must display an error message saying 
+Please enter a valid e-mail
+
+If the phone number entered is not in the correct format, example it has 5 digits instead of 10, it must say that
+please enter a valid phone number.
+
+--------------------------------------------------------------------------------------------------------------------
+
+Test Case 8 
+
+Title: Entering the delivery details
+
+Description: When user clicks on the 'checkout' button, he/she must be redirected to a page where they can enter the
+			 delivery details.
+
+Precondition: There must be some or atleast one product in the cart.
+
+Assumption: a supported browser is being used.
+
+Test Steps:
+
+Navigate to https://jupiter.cloud.planittesting.com/#/checkout
+Enter all the required details
+
+Expected Result: All the validation checks that were stated in the feedback form will be performed here as well.
+One additional input here is the adress box. The website must display an error messaging if an incorrect address
+is entered.
+
+--------------------------------------------------------------------------------------------------------------------
+
+Test Case 9 
+
+Title: Entering the payment details
+
+Description: When user clicks on the 'checkout' button, he/she must be redirected to a page where they can enter the
+			 payment and delivery details.
+
+Precondition: There must be some or atleast one product in the cart.
+
+Assumption: a supported browser is being used.
+
+Test Steps:
+
+Navigate to https://jupiter.cloud.planittesting.com/#/checkout
+Click all the required delivery details along with the payment details and click on the submit button.
+
+Expected Result: The website must display an error message stating payment unsuccessful if the entered card details
+are incorrect or if the user choses Visa and enters a Mastercard number and vica versa.
+
+--------------------------------------------------------------------------------------------------------------------
+
+Test Case 10 
+
+Title: Navigating to the correct page
+Description: When user clicks on the any tab, he/she must be taken to that page
+
+Precondition: Cart must be empty.
+
+Assumption: a supported browser is being used.
+
+Test Steps:
+
+Navigate to https://jupiter.cloud.planittesting.com/#
+Click on any tab and switch back and forth between the different tabs on the navigation pane. 
+Try to enter the url manually and check and if the website is going to different pages.
+
+Expected Result: All the pages must are easily navigated to by either pressing on the tabs on the navigation pane or
+manually entering the url. If the user enters the url for the checkout page when the cart is empty, he must be
+directed to the empty cart page.
+
+--------------------------------------------------------------------------------------------------------------------
